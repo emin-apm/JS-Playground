@@ -8,20 +8,18 @@ function getTicketsCount(moneyIn) {
     } else if (moneyIn >= 500) {
       moneyIn -= 500;
       ticketsCount += 3;
+      break;
     } else if (moneyIn >= 300) {
       moneyIn -= 300;
       ticketsCount += 2;
+      break;
     } else if (moneyIn >= 100) {
       moneyIn -= 100;
       ticketsCount += 1;
-    } else {
-      console.log(`You have ${ticketsCount} tickets`);
-      console.log(
-        `You have left with ${moneyIn} BGN spent money which will be accounted for next time`
-      );
       break;
     }
   }
+  console.log(`You have ${ticketsCount} tickets`);
 }
 
-getTicketsCount(-2099);
+getTicketsCount(500);
