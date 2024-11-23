@@ -13,5 +13,4 @@ function billShare(bill, k, b) {
   }
 }
 
-// billShare([3, 10, 2, 9], 1, 12);
 billShare([3, 10, 2, 9], 1, 7);
